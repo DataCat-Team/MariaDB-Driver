@@ -18,6 +18,14 @@ pipeline {
             }
         }
 
+        stage('Prepare Maven Wrapper') {
+            agent { label 'Linux-Build' }
+            steps {
+                sh 'chmod +x mvnw || true'
+                sh './mvnw -v'
+            }
+        }
+
         stage('Build') {
             steps {
                 script {
