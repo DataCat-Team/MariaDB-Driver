@@ -6,11 +6,6 @@ pipeline {
         disableConcurrentBuilds()
     }
 
-    tools {
-        jdk 'JDK 21'
-        maven 'Maven 3'
-    }
-
     stages {
         stage('Checkout') {
             steps {
@@ -30,9 +25,9 @@ pipeline {
             steps {
                 script {
                     if (isUnix()) {
-                        sh 'mvn clean package'
+                        sh './mvnw clean package'
                     } else {
-                        bat 'mvn clean package'
+                        bat 'mvnw clean package'
                     }
                 }
             }
