@@ -20,6 +20,12 @@
             <url>https://repo.julianweinelt.de/releases</url>
         </repository>
     </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>julianweinelt-releases</id>
+            <url>https://repo.julianweinelt.de/releases</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <dependencies>
         <dependency>
