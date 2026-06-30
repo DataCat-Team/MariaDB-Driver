@@ -1,4 +1,5 @@
 [![Build Status](https://ci.julianweinelt.de/buildStatus/icon?job=DataCat-MariaDB&style=plastic&subject=Build+Status)](http://ci.julianweinelt.de/view/all/job/DataCat-MariaDB/)
+![Static Badge](https://img.shields.io/badge/version-1.0.0-blue?style=plastic)
 
 [![DataCat](https://github.com/JWeinelt/devins-badges/blob/v3/assets/cozy/database/datacat_64h.png?raw=true)](https://data-cat.de)
 [![DataCat](https://github.com/JWeinelt/devins-badges/blob/v3/assets/cozy/database/mariadb_64h.png?raw=true)](https://data-cat.de)
