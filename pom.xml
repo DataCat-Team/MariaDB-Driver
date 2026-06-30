@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.datacat.driver</groupId>
+    <artifactId>MariaDB</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>julianweinelt-releases</id>
+            <url>https://repo.julianweinelt.de/releases</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>de.julianweinelt.datacat</groupId>
+            <artifactId>dbx</artifactId>
+            <version>1.0.5</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>de.julianweinelt.datacat</groupId>
+                <artifactId>datacat-maven-plugin</artifactId>
+                <version>1.1.1</version>
+
+                <configuration>
+                    <version>1.0.1</version>
+                    <authors>
+                        <author>Julian Weinelt</author>
+                        <author>MariaDB</author>
+                    </authors>
+                    <description>Yarn for MariaDB Driver Compatibility</description>
+
+                    <includeProjectJar>true</includeProjectJar>
+
+                    <outputName>MariaDB-Driver</outputName>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>createyarn</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

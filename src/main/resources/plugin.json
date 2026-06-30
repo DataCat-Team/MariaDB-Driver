@@ -1,0 +1,12 @@
+{
+  "mainClass": "de.datacat.driver.MariaDB",
+  "authors": ["Julian Weinelt"],
+  "description": "MariaDB Driver Compatibility",
+  "minAPIVersion": "1.0.0",
+  "pluginName": "MariaDB Driver",
+  "requires": [],
+  "storesSensitiveData": false,
+  "usesDatabase": true,
+  "usesEncryption": true,
+  "version": "1.0.2"
+}
